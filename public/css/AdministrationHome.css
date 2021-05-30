@@ -1,0 +1,380 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.search input {
+    background: rgba(196, 196, 196, 0.25);
+    border: none;
+    height: 30px;
+    width: 180px;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.search input::placeholder {
+    font-size: 10px;
+}
+
+.search img {
+    position: absolute;
+    height: 20px;
+    top: 7%;
+    left: 19%;
+}
+
+.logo {
+    height: 20px;
+}
+
+.logo img {
+    position: relative;
+    top: -2px;
+    height: 30px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.title-bar {
+    display: flex;
+    position: relative;
+    top: 30px;
+    height: auto;
+    width: 240px;
+    background-color: #3FA7A7;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding: 7px;
+}
+
+.title-bar p {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.headings {
+    width: 240px;
+    margin: auto;
+    display: flex;
+    height: 40px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    border-color: #fefefe;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.headings a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.headings a:hover {
+    border-bottom: 5px solid rgba(243, 23, 23, 0.611);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.complaint-box-content {
+    position: relative;
+    top: 60px;
+    background-color: #fefefe;
+    margin: auto;
+    height: auto;
+    width: 280px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.complaint-box {
+    background-color: #fefefe;
+    border-top: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    padding: 5px;
+}
+
+.tools {
+    position: absolute;
+    right: 30px;
+    top: 4.5%;
+}
+
+.tools .logout {
+    position: absolute;
+    top: 4.5%;
+}
+
+.icon_param {
+    position: relative;
+    right: 25px;
+}
+
+.parameters {
+    height: 15px;
+    cursor: pointer;
+}
+
+.bloc_filter {
+    position: relative;
+    top: 30px;
+}
+
+.bloc_filter button {
+    font-size: 9px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.bloc_filter button:hover {
+    background-color: rgba(88, 161, 221, 0.493);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.complaint-box a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.complaint-box:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.message .name {
+    font-weight: bold;
+}
+
+.complaint-box p {
+    font-size: 8px;
+}
+
+.complaint-box .color {
+    background-color: lime;
+    height: auto;
+    width: 50px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 10px;
+}
+
+@media all and (min-width: 400px) {
+    .search input {
+        height: 32px;
+        width: 212px;
+    }
+    .search input::placeholder {
+        font-size: 12px;
+    }
+    .title-bar p {
+        margin-left: 60px;
+    }
+    .title-bar {
+        width: 315px;
+        height: 40px;
+        padding: 7px;
+    }
+    .headings {
+        width: 315px;
+        height: 40px;
+    }
+    .headings button {
+        font-size: 13px;
+    }
+    .complaint-box p {
+        font-size: 11px;
+    }
+    .complaint-box-content {
+        width: 370px;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .search input {
+        height: 32px;
+        width: 249px;
+    }
+    .search input::placeholder {
+        font-size: 14px;
+    }
+    .title-bar p {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .logo img {
+        height: 45px;
+        top: -4px;
+    }
+    .title-bar {
+        width: 355px;
+        height: 50px;
+        padding: 7px;
+    }
+    .headings {
+        width: 350px;
+        height: 50px;
+    }
+    .headings button {
+        font-size: 15px;
+    }
+    .complaint-box p {
+        font-size: 13px;
+    }
+    .complaint-box-content {
+        width: 430px;
+    }
+}
+
+@media all and (min-width: 730px) {
+    .search input {
+        height: 40px;
+        width: 320px;
+        font-size: 16px;
+    }
+    .icon_param {
+        top: 3.5px;
+        right: 60px;
+    }
+    .tools {
+        right: 30px;
+    }
+    .search input::placeholder {
+        font-size: 16px;
+    }
+    .parameters {
+        height: 20px;
+    }
+    .title-bar p {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .headings {
+        width: 580px;
+        height: 70px;
+    }
+    .headings button {
+        font-size: 18px;
+    }
+    .logo img {
+        height: 65px;
+    }
+    .title-bar {
+        width: 580px;
+        height: 70px;
+        padding: 7px;
+    }
+    .title-bar p {
+        font-weight: bold;
+        margin: auto;
+    }
+    .complaint-box p {
+        font-size: 14px;
+    }
+    .complaint-box-content {
+        width: 760px;
+    }
+    .complaint-box {
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .search input {
+        height: 50px;
+        width: 450px;
+        font-size: 17px;
+    }
+    .search input::placeholder {
+        font-size: 17px;
+    }
+    .title-bar p {
+        font-weight: bold;
+        font-size: 40px;
+        margin: auto;
+    }
+    .logo img {
+        height: 65px;
+        top: -4px;
+    }
+    .title-bar {
+        width: 900px;
+        height: 70px;
+        padding: 7px;
+    }
+    .headings {
+        width: 900px;
+        height: 80px;
+    }
+    .headings a {
+        font-size: 20px;
+    }
+    .complaint-box p {
+        font-size: 17px;
+    }
+    .parameters {
+        height: 30px;
+        margin: 0 15px;
+    }
+    .complaint-box-content {
+        width: 63em;
+    }
+    .complaint-box {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .bloc_filter {
+        position: absolute;
+        top: 38%;
+        left: 225px;
+    }
+    .bloc_filter button {
+        font-size: 16px;
+        padding: 5px;
+        width: 159px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+}

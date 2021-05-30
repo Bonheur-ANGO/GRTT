@@ -1,0 +1,116 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    float: right;
+    height: 100px;
+}
+
+p {
+    clear: both;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 10px auto;
+    height: auto;
+    padding-bottom: 25px;
+    width: 300px;
+    background: rgba(100, 177, 159, 0.23);
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    height: 80px;
+    width: 250px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    padding: 0 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.box input {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 220px;
+    outline: none;
+}
+
+button {
+    font-weight: 500;
+    margin-top: 20px;
+    border: none;
+    background-color: #64B19F;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+@media screen and (min-width: 510px) {
+    form {
+        width: 480px;
+    }
+    .logo img {
+        height: 120px;
+    }
+    p {
+        font-weight: 800;
+        font-size: 18px;
+    }
+    .box input {
+        width: 260px;
+    }
+    .box {
+        font-size: 18px;
+        height: 100px;
+        width: 300px;
+        padding: 0 15px;
+    }
+    button {
+        font-size: 18px;
+        width: 120px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    form {
+        width: 700px;
+    }
+    .logo img {
+        height: 120px;
+    }
+    p {
+        font-weight: 800;
+        font-size: 25px;
+    }
+    .box {
+        font-size: 21px;
+        height: 100px;
+        width: 400px;
+        padding: 0 15px;
+    }
+    .box input {
+        width: 320px;
+    }
+    button {
+        font-size: 18px;
+        padding: 7px;
+        width: 170px;
+    }
+}

@@ -1,0 +1,298 @@
+/*Desktop First*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: auto;
+}
+
+.bloc {
+    position: fixed;
+    background-color: #fefefe;
+    height: 100%;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    width: 50%;
+    font-size: 13px;
+    padding: 10px 0;
+    left: -900px;
+}
+
+.bloc .close {
+    position: absolute;
+    height: 12px;
+    top: 0;
+    left: 88%;
+    cursor: pointer;
+}
+
+.bloc.active {
+    left: 0;
+}
+
+.bloc ul {
+    display: block;
+    position: relative;
+    top: 80px;
+    font-size: 12px;
+}
+
+.bloc ul li {
+    list-style-type: none;
+    padding: 5px 0;
+    padding-left: 3px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 12px;
+}
+
+.bloc img {
+    position: relative;
+    top: 50px;
+    left: 28%;
+    height: 50px;
+}
+
+.bloc ul a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+.bloc ul li:hover {
+    background-color: rgba(100, 177, 159, 0.43);
+    cursor: pointer;
+}
+
+.logo img {
+    z-index: 50;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    height: 200px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 35px;
+    color: #64B19F;
+    cursor: pointer;
+}
+
+.username {
+    text-align: center;
+    position: relative;
+    top: 10%;
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.modal {
+    z-index: 1000;
+    display: none;
+    background-color: #fefefe;
+    width: 130px;
+    height: 90px;
+    margin: auto auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+    transition: 0.5s all linear;
+    -webkit-transition: 0.5s all linear;
+    -moz-transition: 0.5s all linear;
+    -ms-transition: 0.5s all linear;
+    -o-transition: 0.5s all linear;
+}
+
+.modal .close_modal {
+    width: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    left: 45%;
+    background-color: #64B19F;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.disconnect {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+button svg {
+    position: absolute;
+    margin-top: 14px;
+    left: 20px;
+}
+
+button svg.toggle {
+    left: 180px;
+}
+
+@media all and (min-width: 0px) {
+    .bloc ul li {
+        font-size: 9px;
+    }
+    .disconnect {
+        font-size: 9px;
+    }
+    .username {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .bloc ul li {
+        font-size: 13px;
+    }
+    .username {
+        font-size: 13px;
+    }
+    .disconnect {
+        font-size: 13px;
+    }
+    .bloc .close {
+        height: 18px;
+    }
+}
+
+@media all and (min-width: 425px) {
+    .logo img {
+        height: 250px;
+        left: 30%;
+    }
+    .bloc ul li {
+        font-size: 15px;
+    }
+    .disconnect {
+        font-size: 15px;
+    }
+    .username {
+        font-size: 16px;
+    }
+    .bloc img {
+        height: 110px;
+    }
+    .bloc .close {
+        height: 18px;
+    }
+}
+
+@media all and (min-width: 650px) {
+    button svg {
+        position: relative;
+        top: 10px;
+        left: 50px;
+        font-size: 45px;
+    }
+    .logo img {
+        height: 350px;
+        left: 30%;
+        top: 30px;
+    }
+    .bloc .close {
+        height: 19px;
+    }
+}
+
+@media all and (min-width: 765px) {
+    button svg {
+        position: relative;
+        top: 10px;
+        left: 50px;
+        font-size: 45px;
+    }
+    .logo img {
+        height: 430px;
+    }
+    .bloc {
+        font-size: 18px;
+        width: 30%;
+    }
+    .bloc ul {
+        display: block;
+    }
+    .bloc img {
+        height: 105px;
+    }
+    .bloc .close {
+        height: 20px;
+    }
+}
+
+@media all and (min-width: 900px) {
+    button svg {
+        position: relative;
+        top: 10px;
+        left: 50px;
+        font-size: 45px;
+    }
+    .logo img {
+        height: 510px;
+        border-radius: 300px;
+        left: 35%;
+        top: 0;
+        -webkit-border-radius: 300px;
+        -moz-border-radius: 300px;
+        -ms-border-radius: 300px;
+        -o-border-radius: 300px;
+    }
+    .bloc {
+        width: 30%;
+    }
+    .bloc ul li {
+        display: block;
+        font-size: 18px;
+        position: relative;
+        top: -100px;
+    }
+    .username {
+        font-size: 20px;
+    }
+    .disconnect {
+        font-size: 18px;
+    }
+    .bloc ul {
+        margin-top: 50%;
+    }
+    .bloc img {
+        height: 120px;
+    }
+    .bloc .close {
+        height: 25px;
+    }
+    .modal {
+        font-size: 20px;
+        height: 200px;
+        width: 450px;
+    }
+    .modal .close_modal {
+        top: 95px;
+        font-size: 20px;
+        width: 50px;
+    }
+}

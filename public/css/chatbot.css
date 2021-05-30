@@ -1,0 +1,71 @@
+div {
+    margin: auto;
+    border-radius: 20px;
+    background-color: #64B19F;
+    width: 600px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.back {
+    height: 35px;
+    position: relative;
+}
+
+.botui-container {}
+
+.botui-messages-container {}
+
+.botui-actions-container {}
+
+.botui-message {}
+
+.botui-message-content.text {
+    background-color: #d7f6e9;
+    color: #0e5442;
+}
+
+.botui-message-content.human {
+    background-color: #0c9172;
+    color: white;
+}
+
+.botui-message-content .embed {}
+
+.botui-message-content-link {}
+
+.botui-actions-text-input {
+    color: white;
+}
+
+.botui-actions-text-input::placeholder {
+    color: white;
+}
+
+.botui-actions-text-submit {}
+
+.botui-actions-buttons-button {
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgb(30, 152, 154) 52%, rgba(45, 218, 253, 1) 100%);
+}
+
+@media screen and (min-width: 120px) {
+    div {
+        width: 200px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    div {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    div {
+        width: 600px;
+    }
+}
